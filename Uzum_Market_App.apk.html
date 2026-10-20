@@ -1,0 +1,2239 @@
+<html lang="uz"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMzI4NjI5Mzc0Mjk2NjQ3MTQ1MyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzE0NTQxNjc1ZTJhOGNmMWNfaW5kZXguaHRtbC04MDYifSwiZXhwIjoxNzkxODA2OTIwLCJpYXQiOjE3OTE4MDMzMjAsImFsZyI6IlJTMjU2In0.ATEMYfXsG404QqVs8tbuyHFG_su3tcpQFNLhaMA9qkvXBrQ9HxG_NygT5MsI7LsHIW3Wkc_tsig7St3B2J66jw_o_twmVaJo4fTqsXsdibuxUellRwDc30xr4DFSnxWP62f1PE7K7kuCKoG_16cjMtc-4SNEtpzViA5woQ_BVHy1fOpaWq6wLRW_GFfGLBJY5XpQkFlfrSuodIQSj9g220gY5SFRayHSa4To44lo22ywv70IdP-0HPKM6mxiUQAlW2xyrdiqH5PAkOH7OEPYwGgu5FeLqUtU2sfM2f2ocpEJNiRsHKv4vOc7JyW8Sr8XI6jcZysfALRrjZrXyjXSmA","c_14541675e2a8cf1c_index.html-806")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=w(a.ownerDocument.styleSheets);c=yield sa(c,b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzum Market - Onlayn Do'kon &amp; Mobile App</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        uzum: {
+                            DEFAULT: '#7000FF',
+                            hover: '#5A00CC',
+                            light: '#f5eeff',
+                            dark: '#4c00b3',
+                            bg: '#f2f4f7'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7000FF;
+            border-radius: 4px;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-5{bottom:1.25rem}.right-0{right:0px}.right-1{right:0.25rem}.right-4{right:1rem}.right-5{right:1.25rem}.top-0{top:0px}.top-1{top:0.25rem}.top-4{top:1rem}.left-2{left:0.5rem}.right-2{right:0.5rem}.top-2{top:0.5rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-0\.5{margin-left:0.125rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-8{margin-top:2rem}.mt-1{margin-top:0.25rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.h-10{height:2.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-4{height:1rem}.h-48{height:12rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.max-h-\[90vh\]{max-height:90vh}.min-h-\[180px\]{min-height:180px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-28{width:7rem}.w-4{width:1rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.w-5{width:1.25rem}.w-max{width:max-content}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.-translate-x-full{--tw-translate-x:-100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-green-100{--tw-border-opacity:1;border-color:rgb(220 252 231 / var(--tw-border-opacity, 1))}.border-purple-400{--tw-border-opacity:1;border-color:rgb(192 132 252 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-uzum{--tw-border-opacity:1;border-color:rgb(112 0 255 / var(--tw-border-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-cyan-100{--tw-bg-opacity:1;background-color:rgb(207 250 254 / var(--tw-bg-opacity, 1))}.bg-cyan-50{--tw-bg-opacity:1;background-color:rgb(236 254 255 / var(--tw-bg-opacity, 1))}.bg-cyan-600{--tw-bg-opacity:1;background-color:rgb(8 145 178 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-uzum{--tw-bg-opacity:1;background-color:rgb(112 0 255 / var(--tw-bg-opacity, 1))}.bg-uzum-dark{--tw-bg-opacity:1;background-color:rgb(76 0 179 / var(--tw-bg-opacity, 1))}.bg-uzum-light{--tw-bg-opacity:1;background-color:rgb(245 238 255 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-yellow-400{--tw-bg-opacity:1;background-color:rgb(250 204 21 / var(--tw-bg-opacity, 1))}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-purple-900{--tw-gradient-from:#581c87 var(--tw-gradient-from-position);--tw-gradient-to:rgb(88 28 135 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-uzum{--tw-gradient-to:rgb(112 0 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #7000FF var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-indigo-800{--tw-gradient-to:#3730a3 var(--tw-gradient-to-position)}.bg-cover{background-size:cover}.bg-center{background-position:center}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-16{padding-top:4rem;padding-bottom:4rem}.pb-1{padding-bottom:0.25rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pr-12{padding-right:3rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-5xl{font-size:3rem;line-height:1}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wider{letter-spacing:0.05em}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249 / var(--tw-text-opacity, 1))}.text-cyan-600{--tw-text-opacity:1;color:rgb(8 145 178 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-purple-100{--tw-text-opacity:1;color:rgb(243 232 255 / var(--tw-text-opacity, 1))}.text-purple-200{--tw-text-opacity:1;color:rgb(233 213 255 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-uzum{--tw-text-opacity:1;color:rgb(112 0 255 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-yellow-900{--tw-text-opacity:1;color:rgb(113 63 18 / var(--tw-text-opacity, 1))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-200{transition-duration:200ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.hover\:bg-cyan-700:hover{--tw-bg-opacity:1;background-color:rgb(14 116 144 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:bg-green-50:hover{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.hover\:bg-green-600:hover{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-100:hover{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-900:hover{--tw-bg-opacity:1;background-color:rgb(88 28 135 / var(--tw-bg-opacity, 1))}.hover\:bg-uzum-hover:hover{--tw-bg-opacity:1;background-color:rgb(90 0 204 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/30:hover{background-color:rgb(255 255 255 / 0.3)}.hover\:bg-yellow-500:hover{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-50:hover{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.hover\:bg-uzum:hover{--tw-bg-opacity:1;background-color:rgb(112 0 255 / var(--tw-bg-opacity, 1))}.hover\:text-gray-600:hover{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.hover\:text-green-600:hover{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.hover\:text-green-700:hover{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.hover\:text-purple-200:hover{--tw-text-opacity:1;color:rgb(233 213 255 / var(--tw-text-opacity, 1))}.hover\:text-uzum:hover{--tw-text-opacity:1;color:rgb(112 0 255 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-uzum:focus{--tw-border-opacity:1;border-color:rgb(112 0 255 / var(--tw-border-opacity, 1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-uzum-hover{--tw-bg-opacity:1;background-color:rgb(90 0 204 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:mb-4{margin-bottom:1rem}.sm\:mb-6{margin-bottom:1.5rem}.sm\:inline{display:inline}.sm\:flex{display:flex}.sm\:min-h-\[260px\]{min-height:260px}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:gap-3{gap:0.75rem}.sm\:gap-4{gap:1rem}.sm\:gap-5{gap:1.25rem}.sm\:p-10{padding:2.5rem}.sm\:p-4{padding:1rem}.sm\:p-6{padding:1.5rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:block{display:block}.md\:inline{display:inline}.md\:flex{display:flex}.md\:h-10{height:2.5rem}.md\:min-h-\[300px\]{min-height:300px}.md\:w-10{width:2.5rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:gap-6{gap:1.5rem}.md\:p-12{padding:3rem}.md\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-\[11px\]{font-size:11px}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style></head>
+<body class="text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Top Mobile Install Banner (Simulated Native App Prompt) -->
+    <div id="installAppBanner" class="bg-gray-900 text-white text-xs py-2 px-4 flex justify-between items-center z-50">
+        <div class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-uzum rounded-lg flex items-center justify-center text-white font-black text-sm">u</div>
+            <div>
+                <p class="font-bold leading-tight">Uzum Market Android Ilovasi</p>
+                <p class="text-[10px] text-gray-300">Google Play'dan bepul yuklab oling</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-2">
+            <button onclick="openGooglePlayModal()" class="bg-green-500 hover:bg-green-600 text-white text-[11px] font-bold px-3 py-1 rounded-lg transition shadow">
+                <i class="fa-brands fa-google-play mr-1"></i> O'rnatish
+            </button>
+            <button onclick="document.getElementById('installAppBanner').remove()" class="text-gray-400 hover:text-white px-1 font-bold text-base">×</button>
+        </div>
+    </div>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-uzum text-white text-xs py-1.5 px-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <button id="citySelectorBtn" class="flex items-center gap-1 hover:underline focus:outline-none">
+                    <i class="fa-solid fa-location-dot font-bold"></i>
+                    Shahar: <strong id="currentCityName" class="ml-1">Toshkent</strong>
+                </button>
+                <span class="hidden md:inline text-purple-200">|</span>
+                <span class="hidden md:inline text-purple-100">Topshirish punktlari (140+)</span>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-5">
+                <span class="hidden sm:flex items-center gap-1 text-yellow-300 font-semibold">
+                    <i class="fa-solid fa-truck-fast"></i> 1 kunda bepul yetkazib beramiz!
+                </span>
+                <button onclick="openGooglePlayModal()" class="flex items-center gap-1 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-2 py-0.5 rounded text-[11px] transition shadow">
+                    <i class="fa-brands fa-google-play"></i> App Download
+                </button>
+                <a href="https://t.me/uzum_market" target="_blank" class="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-2 py-0.5 rounded text-[11px] transition">
+                    <i class="fa-brands fa-telegram text-cyan-300"></i> Telegram
+                </a>
+                <button id="langBtn" class="hover:text-purple-200 font-semibold border border-purple-400 rounded px-1.5 py-0.5 text-[11px]">UZ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white sticky top-0 z-40 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3 md:gap-6">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group flex-shrink-0" onclick="resetAppView()">
+                <div class="w-9 h-9 md:w-10 md:h-10 bg-uzum rounded-xl flex items-center justify-center text-white font-black text-xl md:text-2xl tracking-tighter shadow-md group-hover:bg-uzum-hover transition">
+                    u
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-uzum font-black text-xl md:text-2xl leading-none tracking-tight">uzum</span>
+                    <span class="text-[10px] md:text-[11px] font-bold text-gray-400 tracking-wider uppercase leading-tight">market</span>
+                </div>
+            </a>
+
+            <!-- Catalog Menu Button -->
+            <button id="catalogBtn" class="hidden sm:flex items-center gap-2 bg-uzum-light hover:bg-purple-100 text-uzum font-semibold px-4 py-2.5 rounded-xl transition flex-shrink-0">
+                <i class="fa-solid fa-border-all text-lg"></i>
+                <span>Katalog</span>
+            </button>
+
+            <!-- Search Bar -->
+            <div class="flex-1 max-w-2xl relative">
+                <div class="relative flex items-center">
+                    <input type="text" id="searchInput" placeholder="Mahsulotlar va turkumlar bo'yicha qidirish..." class="w-full pl-4 pr-12 py-2.5 bg-gray-100 border border-transparent rounded-xl focus:bg-white focus:border-uzum focus:outline-none transition text-sm">
+                    <button id="searchBtn" class="absolute right-1 px-3 py-1.5 bg-uzum hover:bg-uzum-hover text-white rounded-lg transition">
+                        <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Header Controls -->
+            <div class="flex items-center gap-1 sm:gap-3 flex-shrink-0">
+                <button onclick="openGooglePlayModal()" class="hidden md:flex flex-col items-center justify-center p-2 text-green-600 hover:text-green-700 rounded-xl hover:bg-green-50 transition">
+                    <i class="fa-brands fa-google-play text-xl"></i>
+                    <span class="text-[11px] font-semibold mt-0.5">Yuklash</span>
+                </button>
+
+                <button id="profileBtn" class="flex flex-col items-center justify-center p-2 text-gray-700 hover:text-uzum rounded-xl hover:bg-gray-50 transition">
+                    <i class="fa-regular fa-user text-xl"></i>
+                    <span class="text-[11px] font-medium hidden md:block mt-0.5">Kirish</span>
+                </button>
+
+                <button id="favoritesDrawerBtn" class="relative flex flex-col items-center justify-center p-2 text-gray-700 hover:text-uzum rounded-xl hover:bg-gray-50 transition">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                    <span class="text-[11px] font-medium hidden md:block mt-0.5">Saralangan</span>
+                    <span id="favBadge" class="absolute top-1 right-1 bg-uzum text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center hidden">0</span>
+                </button>
+
+                <button id="cartDrawerBtn" class="relative flex items-center gap-2 bg-uzum hover:bg-uzum-hover text-white px-3 sm:px-4 py-2.5 rounded-xl transition font-medium text-sm">
+                    <i class="fa-solid fa-cart-shopping text-base"></i>
+                    <span class="hidden sm:inline">Savatcha</span>
+                    <span id="cartBadge" class="bg-white text-uzum font-extrabold text-xs px-1.5 py-0.5 rounded-full ml-0.5 hidden">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Categories horizontal bar -->
+        <div class="max-w-7xl mx-auto px-4 py-2 border-t border-gray-100 overflow-x-auto hide-scrollbar flex items-center gap-6 text-sm text-gray-600 whitespace-nowrap">
+            <button class="category-filter-btn active text-uzum font-semibold border-b-2 border-uzum pb-1" data-category="all">Barchasi</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="elektronika">Elektronika</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="maishiy-texnika">Maishiy texnika</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="kiyim">Kiyim-kechak</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="poyabzal">Poyabzallar</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="gozallik">G'ozallik va parvarish</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="aksessuarlar">Aksessuarlar</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1" data-category="sport">Sport tovarlari</button>
+            <button class="category-filter-btn hover:text-uzum transition pb-1 font-bold text-red-500" data-category="aksiya">🔥 Chegirmalar</button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-4 md:py-6 flex-grow w-full">
+        <!-- Banner Hero Carousel -->
+        <section class="relative rounded-2xl overflow-hidden shadow-lg bg-gradient-to-r from-purple-900 via-uzum to-indigo-800 text-white min-h-[180px] sm:min-h-[260px] md:min-h-[300px] flex items-center mb-8">
+            <div id="carouselSlide" class="w-full h-full flex transition-transform duration-500 ease-out">
+                <div class="w-full flex-shrink-0 p-6 sm:p-10 md:p-12 flex flex-col justify-center items-start relative bg-cover bg-center" style="background-image: linear-gradient(90deg, rgba(112,0,255,0.95) 0%, rgba(112,0,255,0.4) 100%), url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&amp;fit=crop&amp;w=1200&amp;q=80');">
+                    <span class="bg-yellow-400 text-gray-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider mb-2 sm:mb-4">Google Play &amp; Telegram</span>
+                    <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-2 sm:mb-4 leading-tight max-w-xl">Uzum Market rasmiy mobil ilovasi!</h1>
+                    <p class="text-xs sm:text-base text-purple-100 mb-4 sm:mb-6 max-w-md">Mobil ilovani yuklab oling yoki Telegram orqali to'g'ridan-to'g'ri xarid qiling.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="openGooglePlayModal()" class="bg-white text-uzum hover:bg-gray-100 font-extrabold px-5 py-2.5 rounded-xl transition shadow-lg text-xs sm:text-sm flex items-center gap-2">
+                            <i class="fa-brands fa-google-play text-green-600 text-base"></i> Google Play'dan Yuklash
+                        </button>
+                        <button onclick="filterByCategory('all')" class="bg-uzum-dark hover:bg-purple-900 text-white font-bold px-5 py-2.5 rounded-xl transition shadow text-xs sm:text-sm">
+                            Mahsulotlar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Badges Grid -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+            <div class="bg-white p-3.5 rounded-xl border border-gray-100 shadow-sm flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-purple-50 text-uzum flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs sm:text-sm text-gray-800">1 kunda yetkazish</h4>
+                    <p class="text-[11px] text-gray-500">Mintaqada tezkor kuryer</p>
+                </div>
+            </div>
+            <div onclick="openGooglePlayModal()" class="bg-white p-3.5 rounded-xl border border-green-100 shadow-sm flex items-center gap-3 cursor-pointer hover:bg-green-50 transition">
+                <div class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="fa-brands fa-google-play"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs sm:text-sm text-gray-800">Google Play APK</h4>
+                    <p class="text-[11px] text-green-600 font-semibold">Ilovani o'rnatish &amp; Box</p>
+                </div>
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-gray-100 shadow-sm flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-purple-50 text-uzum flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs sm:text-sm text-gray-800">Bo'lib to'lash 0-0-12</h4>
+                    <p class="text-[11px] text-gray-500">Boshlang'ich to'lovsiz</p>
+                </div>
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-gray-100 shadow-sm flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs sm:text-sm text-gray-800">Telegram Buyurtma</h4>
+                    <p class="text-[11px] text-gray-500">Tezkor xarid qilish</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Product Catalog Grid -->
+        <section class="mb-10">
+            <div class="flex items-center justify-between mb-5">
+                <h2 id="sectionTitle" class="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
+                    Ommabop mahsulotlar
+                    <span id="productCount" class="text-xs font-medium text-gray-400 bg-gray-200 px-2 py-0.5 rounded-full">10 ta</span>
+                </h2>
+                <div class="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
+                    <span>Saralash:</span>
+                    <select id="sortSelect" class="bg-white border border-gray-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-uzum text-xs font-semibold cursor-pointer">
+                        <option value="popular">Ommabopligi bo'yicha</option>
+                        <option value="cheap">Arzonroq</option>
+                        <option value="expensive">Qimmatroq</option>
+                        <option value="rating">Reytingi baland</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Dynamic Grid Container -->
+            <div id="productsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4"><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(1)">
+                            <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Smartfon Apple iPhone 15 Pro Max 256GB Natural Titanium" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Aksiya
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(1)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(1)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Smartfon Apple iPhone 15 Pro Max 256GB Natural Titanium
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.9</span>
+                                <span>(142 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                1,283,333 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        17,200,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    15,400,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(1)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(2)">
+                            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Noutbuk Lenovo IdeaPad 3 15IAU7 i3-1215U 8GB SSD 256GB" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Arzon narx
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(2)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(2)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Noutbuk Lenovo IdeaPad 3 15IAU7 i3-1215U 8GB SSD 256GB
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.8</span>
+                                <span>(89 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                358,333 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        4,800,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    4,300,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(2)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(3)">
+                            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Televizor Xiaomi TV A2 43'' Smart TV Android UHD" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(3)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(3)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Televizor Xiaomi TV A2 43'' Smart TV Android UHD
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.7</span>
+                                <span>(56 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                258,333 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    3,100,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(3)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(4)">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Erkaklar uchun krossovka Nike Air Force 1 '07 Oq" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Xit sotuv
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(4)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(4)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Erkaklar uchun krossovka Nike Air Force 1 '07 Oq
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.9</span>
+                                <span>(230 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                74,167 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        1,100,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    890,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(4)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(5)">
+                            <img src="https://images.unsplash.com/photo-1517668808822-9ebe02f2a6e8?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Kofe mashinasi DeLonghi Magnifica S Avtomat" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Top brend
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(5)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(5)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Kofe mashinasi DeLonghi Magnifica S Avtomat
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">5</span>
+                                <span>(34 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                433,333 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        6,000,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    5,200,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(5)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(6)">
+                            <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Simsiz quloqchinlar Apple AirPods Pro 2-avlod MagSafe" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Xit sotuv
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(6)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(6)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Simsiz quloqchinlar Apple AirPods Pro 2-avlod MagSafe
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.9</span>
+                                <span>(312 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                237,500 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        3,200,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    2,850,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(6)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(7)">
+                            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Erkaklar ustki kiyimi Paxtali qalin Kurtka Zamonaviy" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Mavsumiy
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(7)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(7)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Erkaklar ustki kiyimi Paxtali qalin Kurtka Zamonaviy
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.6</span>
+                                <span>(42 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                37,500 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        550,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    450,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(7)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(8)">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Soch fen Dyson Supersonic HD08 Premium to'plam" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Trend
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(8)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(8)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Soch fen Dyson Supersonic HD08 Premium to'plam
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.9</span>
+                                <span>(78 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                408,333 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        5,400,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    4,900,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(8)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(9)">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Aqlli soat Apple Watch Series 9 45mm Midnight" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(9)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(9)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Aqlli soat Apple Watch Series 9 45mm Midnight
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.8</span>
+                                <span>(65 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                425,000 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    5,100,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(9)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div><div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative">
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(10)">
+                            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Sport ganteli to'plami 20kg metall plastina" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    Aksiya
+                                </span>
+                            
+                            <button onclick="event.stopPropagation(); toggleFavorite(10)" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="fa-regular fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(10)" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                Sport ganteli to'plami 20kg metall plastina
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">4.7</span>
+                                <span>(29 sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                31,667 so'm/oy
+                            </div>
+                            <div class="mt-2">
+                                
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        450,000 so'm
+                                    </span>
+                                
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    380,000 so'm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(10)" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                </div></div>
+        </section>
+    </main>
+
+
+    <!-- Google Play App Store Simulated Modal -->
+    <div id="googlePlayModal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-3 sm:p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 relative animate-fadeIn">
+            <button onclick="closeGooglePlayModal()" class="absolute top-4 right-4 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg z-10">×</button>
+            
+            <!-- Google Play Header -->
+            <div class="flex items-center gap-2 mb-4 border-b border-gray-100 pb-3">
+                <i class="fa-brands fa-google-play text-green-600 text-2xl"></i>
+                <span class="font-bold text-gray-700 text-base">Google Play Store</span>
+            </div>
+
+            <!-- App Details Header -->
+            <div class="flex gap-4 items-start mb-5">
+                <div class="w-20 h-20 bg-uzum rounded-2xl flex items-center justify-center text-white font-black text-4xl shadow-md flex-shrink-0">
+                    u
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">Uzum Market: Onlayn do'kon</h3>
+                    <p class="text-xs font-semibold text-uzum mt-0.5">Uzum Inc. • Shopping</p>
+                    <div class="flex items-center gap-3 text-xs text-gray-500 mt-2">
+                        <div class="flex items-center gap-1 font-bold text-gray-800">
+                            <span>4.8</span>
+                            <i class="fa-solid fa-star text-yellow-400 text-[10px]"></i>
+                        </div>
+                        <span>•</span>
+                        <span>10M+ Yuklanmalar</span>
+                        <span>•</span>
+                        <span class="bg-gray-200 text-gray-800 text-[10px] font-bold px-1.5 py-0.5 rounded">PEGI 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Button in Modal -->
+            <div class="mb-6 space-y-2">
+                <button onclick="downloadAPKFile()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-solid fa-download text-base"></i>
+                    <span>O'rnatish / APK Yuklab Olish (Free)</span>
+                </button>
+                <p class="text-[11px] text-center text-gray-400">Hajmi: 28.5 MB • Android 6.0 va undan yuqori</p>
+            </div>
+
+            <!-- App Screen Previews Carousel -->
+            <div class="mb-5">
+                <h4 class="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Ilova ko'rinishlari</h4>
+                <div class="flex gap-2 overflow-x-auto hide-scrollbar pb-2">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-28 h-48 object-cover rounded-xl border border-gray-200 flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1556742049-0a67daf4005a?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-28 h-48 object-cover rounded-xl border border-gray-200 flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-28 h-48 object-cover rounded-xl border border-gray-200 flex-shrink-0">
+                </div>
+            </div>
+
+            <!-- App Info Details -->
+            <div class="text-xs text-gray-600 space-y-2 border-t border-gray-100 pt-3">
+                <p class="font-semibold text-gray-800">Uzum Market haqida:</p>
+                <p>Uzum Market - bu O'zbekiston bo'ylab 1 kunda bepul yetkazib beruvchi zamonaviy marketpleys. Millionlab mahsulotlar va arzon narxlar!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catalog Modal -->
+    <div id="catalogModal" class="fixed inset-0 bg-black/50 z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white max-w-md w-full h-full p-6 shadow-2xl overflow-y-auto transform -translate-x-full transition-transform duration-300 id-catalog-content flex flex-col">
+            <div class="flex justify-between items-center mb-6 border-b pb-4">
+                <h3 class="text-xl font-extrabold text-gray-900 flex items-center gap-2">
+                    <i class="fa-solid fa-border-all text-uzum"></i> Mahsulotlar katalogi
+                </h3>
+                <button id="closeCatalogBtn" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">×</button>
+            </div>
+            <div class="space-y-2 flex-1" id="catalogList"><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-border-all w-5 text-uzum"></i> Barcha mahsulotlar</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-laptop w-5 text-uzum"></i> Elektronika</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-tv w-5 text-uzum"></i> Maishiy texnika</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-shirt w-5 text-uzum"></i> Kiyim-kechak</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-shoe-prints w-5 text-uzum"></i> Poyabzallar</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-wand-magic-sparkles w-5 text-uzum"></i> G'ozallik va parvarish</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-clock w-5 text-uzum"></i> Aksessuarlar</button><button class="w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700"><i class="fa-solid fa-dumbbell w-5 text-uzum"></i> Sport tovarlari</button></div>
+        </div>
+    </div>
+
+    <!-- City Selector Modal -->
+    <div id="cityModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl">
+            <div class="flex justify-between items-center mb-4 border-b pb-3">
+                <h3 class="font-bold text-lg text-gray-900">Topshirish shahrini tanlang</h3>
+                <button id="closeCityModalBtn" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">×</button>
+            </div>
+            <div class="grid grid-cols-2 gap-2" id="cityListContainer"><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-uzum text-white border-uzum">Toshkent</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Samarqand</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Buxoro</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Farg'ona</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Namangan</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Andijon</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Qarshi</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Nukus</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Navoiy</button><button class="p-2.5 text-xs font-semibold rounded-xl border text-center transition bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50">Urganch</button></div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div id="productDetailModal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-3 sm:p-4">
+        <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-4 sm:p-6 relative">
+            <button id="closeDetailBtn" class="absolute top-4 right-4 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg z-10">×</button>
+            <div id="modalProductContent" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cartDrawer" class="fixed inset-0 bg-black/50 z-50 hidden transition-opacity duration-300">
+        <div class="absolute top-0 right-0 max-w-md w-full h-full bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 id-cart-content">
+            <div class="p-4 border-b border-gray-100 flex items-center justify-between bg-gray-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping text-uzum text-lg"></i>
+                    <h3 class="font-bold text-lg text-gray-900">Savatchangiz</h3>
+                </div>
+                <button id="closeCartBtn" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">×</button>
+            </div>
+            <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-4 space-y-4">
+                    <div class="h-full flex flex-col items-center justify-center text-gray-400 text-center py-16">
+                        <i class="fa-solid fa-basket-shopping text-5xl text-gray-200 mb-3"></i>
+                        <p class="font-bold text-gray-600">Savatchangiz bo'sh</p>
+                        <p class="text-xs text-gray-400 mt-1">Mahsulotlarni tanlab savatchaga qo'shing</p>
+                    </div>
+                </div>
+            <div class="p-4 border-t border-gray-100 bg-gray-50 space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-500">Jami summasi:</span>
+                    <span id="cartTotalPrice" class="text-xl font-black text-uzum">0 so'm</span>
+                </div>
+                <button id="openTelegramCheckoutBtn" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3.5 rounded-xl transition shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-telegram text-xl"></i>
+                    <span>Telegram orqali buyurtma berish</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telegram Checkout Modal Dialog -->
+    <div id="telegramModal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+            <button id="closeTelegramModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl font-bold">×</button>
+            <div class="flex items-center gap-3 mb-4 border-b pb-3">
+                <div class="w-10 h-10 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center text-xl font-bold">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-gray-900 leading-tight">Telegram Buyurtma</h3>
+                    <p class="text-xs text-gray-500">Ma'lumotlarni to'ldiring va Telegramga yuboring</p>
+                </div>
+            </div>
+
+            <form id="telegramCheckoutForm" class="space-y-3">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Ism va Familiya *</label>
+                    <input type="text" id="custName" required="" placeholder="Masalan: Ali Valiyev" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:bg-white focus:border-uzum focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Telefon raqamingiz *</label>
+                    <input type="tel" id="custPhone" required="" placeholder="+998 90 123-45-67" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:bg-white focus:border-uzum focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Yetkazib berish manzili *</label>
+                    <input type="text" id="custAddress" required="" placeholder="Shahar, tuman, ko'cha, uy raqami" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:bg-white focus:border-uzum focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">To'lov turi</label>
+                    <select id="custPayment" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:bg-white focus:border-uzum focus:outline-none">
+                        <option value="Naqd / Qabul qilganda">Naqd to'lov / Yetkazilganda</option>
+                        <option value="Click / Payme">Click yoki Payme ilovasi orqali</option>
+                        <option value="Bo'lib to'lash (Nasiya)">Bo'lib to'lash (0-0-12 Nasiya)</option>
+                    </select>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-brands fa-telegram text-lg"></i>
+                        <span>Telegramga Yuborish</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Favorites Drawer -->
+    <div id="favoritesDrawer" class="fixed inset-0 bg-black/50 z-50 hidden transition-opacity duration-300">
+        <div class="absolute top-0 right-0 max-w-md w-full h-full bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 id-fav-content">
+            <div class="p-4 border-b border-gray-100 flex items-center justify-between bg-gray-50">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-heart text-uzum text-lg"></i>
+                    <h3 class="font-bold text-lg text-gray-900">Saralangan mahsulotlar</h3>
+                </div>
+                <button id="closeFavBtn" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">×</button>
+            </div>
+            <div id="favoritesItemsContainer" class="flex-1 overflow-y-auto p-4 space-y-4">
+                    <div class="h-full flex flex-col items-center justify-center text-gray-400 text-center py-16">
+                        <i class="fa-regular fa-heart text-5xl text-gray-200 mb-3"></i>
+                        <p class="font-bold text-gray-600">Saralanganlar bo'sh</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="fixed inset-0 bg-black/50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl relative text-center">
+            <button id="closeProfileBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">×</button>
+            <div class="w-16 h-16 bg-uzum-light text-uzum rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Uzum Kabineti</h3>
+            <p class="text-xs text-gray-500 mb-6">Telefon raqamingizni kiriting va kirish kodini oling.</p>
+            <input type="tel" placeholder="+998 90 123-45-67" class="w-full px-4 py-3 bg-gray-100 border border-gray-200 rounded-xl mb-4 text-sm text-center font-bold focus:outline-none focus:border-uzum">
+            <button onclick="handleLoginSubmit()" class="w-full bg-uzum text-white font-bold py-3 rounded-xl hover:bg-uzum-hover transition shadow-md">Kodni olish</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"><div class="pointer-events-auto flex items-center gap-2 bg-gray-900 text-white text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl transform transition-all duration-300 translate-y-5 opacity-0">
+                <i class="fa-solid fa-circle-check text-green-400 text-base"></i>
+                <span>Uzum Market APK yuklab olinmoqda...</span>
+            </div></div>
+
+    <footer class="bg-white border-t border-gray-200 mt-12 py-10 text-gray-600 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-gray-900 text-base mb-3">Biz haqimizda</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-uzum transition">Topshirish punktlari</a></li>
+                    <li><a href="#" class="hover:text-uzum transition">Vakansiyalar</a></li>
+                    <li><a href="#" class="hover:text-uzum transition">Kompaniya haqida</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-900 text-base mb-3">Mijozlarga yordam</h4>
+                <ul class="space-y-2">
+                    <li><a href="https://t.me/uzum_market" target="_blank" class="hover:text-uzum transition flex items-center gap-1.5"><i class="fa-brands fa-telegram text-cyan-600"></i> Telegram yordam</a></li>
+                    <li><a href="#" class="hover:text-uzum transition">Savol-Javoblar (FAQ)</a></li>
+                    <li><a href="#" class="hover:text-uzum transition">Buyurtmani kuzatish</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-900 text-base mb-3">Mobil Ilova</h4>
+                <ul class="space-y-2">
+                    <li><button onclick="openGooglePlayModal()" class="hover:text-green-600 transition flex items-center gap-1.5"><i class="fa-brands fa-google-play text-green-600"></i> Google Play yuklash</button></li>
+                    <li><button onclick="downloadAPKFile()" class="hover:text-uzum transition flex items-center gap-1.5"><i class="fa-solid fa-file-arrow-down text-uzum"></i> Uzum APK skachat</button></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-900 text-base mb-3">Ilovani yuklab olish</h4>
+                <p class="text-xs text-gray-500 mb-3">Mobil qurilmalardan qulay xaridlar uchun:</p>
+                <div class="flex items-center gap-2">
+                    <div onclick="openGooglePlayModal()" class="bg-gray-100 hover:bg-gray-200 p-2.5 rounded-xl cursor-pointer flex items-center gap-2 transition">
+                        <i class="fa-brands fa-google-play text-xl text-green-600"></i>
+                        <div>
+                            <p class="text-[9px] uppercase font-bold text-gray-400">Get it on</p>
+                            <p class="text-xs font-bold text-gray-800">Google Play</p>
+                        </div>
+                    </div>
+                    <div onclick="openGooglePlayModal()" class="bg-gray-100 hover:bg-gray-200 p-2.5 rounded-xl cursor-pointer flex items-center gap-2 transition">
+                        <i class="fa-brands fa-apple text-xl text-gray-800"></i>
+                        <div>
+                            <p class="text-[9px] uppercase font-bold text-gray-400">Download on</p>
+                            <p class="text-xs font-bold text-gray-800">App Store</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+            <p>© 2026 Uzum Market. Barcha huquqlar himoyalangan.</p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:underline">Maxfiylik kelishuvi</a>
+                <a href="#" class="hover:underline">Foydalanuvchi qoidalari</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Telegram Integration Config ---
+        const TELEGRAM_USERNAME = "uzum_market"; 
+        const TELEGRAM_BOT_TOKEN = ""; 
+        const TELEGRAM_CHAT_ID = "";   
+
+        // Product Dataset
+        const mockProducts = [
+            {
+                id: 1,
+                title: "Smartfon Apple iPhone 15 Pro Max 256GB Natural Titanium",
+                category: "elektronika",
+                price: 15400000,
+                oldPrice: 17200000,
+                rating: 4.9,
+                reviews: 142,
+                image: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80",
+                badge: "Aksiya",
+                isDiscount: true
+            },
+            {
+                id: 2,
+                title: "Noutbuk Lenovo IdeaPad 3 15IAU7 i3-1215U 8GB SSD 256GB",
+                category: "elektronika",
+                price: 4300000,
+                oldPrice: 4800000,
+                rating: 4.8,
+                reviews: 89,
+                image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80",
+                badge: "Arzon narx",
+                isDiscount: true
+            },
+            {
+                id: 3,
+                title: "Televizor Xiaomi TV A2 43'' Smart TV Android UHD",
+                category: "maishiy-texnika",
+                price: 3100000,
+                oldPrice: null,
+                rating: 4.7,
+                reviews: 56,
+                image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=600&q=80",
+                badge: null,
+                isDiscount: false
+            },
+            {
+                id: 4,
+                title: "Erkaklar uchun krossovka Nike Air Force 1 '07 Oq",
+                category: "poyabzal",
+                price: 890000,
+                oldPrice: 1100000,
+                rating: 4.9,
+                reviews: 230,
+                image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80",
+                badge: "Xit sotuv",
+                isDiscount: true
+            },
+            {
+                id: 5,
+                title: "Kofe mashinasi DeLonghi Magnifica S Avtomat",
+                category: "maishiy-texnika",
+                price: 5200000,
+                oldPrice: 6000000,
+                rating: 5.0,
+                reviews: 34,
+                image: "https://images.unsplash.com/photo-1517668808822-9ebe02f2a6e8?auto=format&fit=crop&w=600&q=80",
+                badge: "Top brend",
+                isDiscount: true
+            },
+            {
+                id: 6,
+                title: "Simsiz quloqchinlar Apple AirPods Pro 2-avlod MagSafe",
+                category: "elektronika",
+                price: 2850000,
+                oldPrice: 3200000,
+                rating: 4.9,
+                reviews: 312,
+                image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=600&q=80",
+                badge: "Xit sotuv",
+                isDiscount: true
+            },
+            {
+                id: 7,
+                title: "Erkaklar ustki kiyimi Paxtali qalin Kurtka Zamonaviy",
+                category: "kiyim",
+                price: 450000,
+                oldPrice: 550000,
+                rating: 4.6,
+                reviews: 42,
+                image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80",
+                badge: "Mavsumiy",
+                isDiscount: true
+            },
+            {
+                id: 8,
+                title: "Soch fen Dyson Supersonic HD08 Premium to'plam",
+                category: "gozallik",
+                price: 4900000,
+                oldPrice: 5400000,
+                rating: 4.9,
+                reviews: 78,
+                image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80",
+                badge: "Trend",
+                isDiscount: true
+            },
+            {
+                id: 9,
+                title: "Aqlli soat Apple Watch Series 9 45mm Midnight",
+                category: "aksessuarlar",
+                price: 5100000,
+                oldPrice: null,
+                rating: 4.8,
+                reviews: 65,
+                image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80",
+                badge: null,
+                isDiscount: false
+            },
+            {
+                id: 10,
+                title: "Sport ganteli to'plami 20kg metall plastina",
+                category: "sport",
+                price: 380000,
+                oldPrice: 450000,
+                rating: 4.7,
+                reviews: 29,
+                image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=600&q=80",
+                badge: "Aksiya",
+                isDiscount: true
+            }
+        ];
+
+        const categories = [
+            { id: "all", title: "Barcha mahsulotlar", icon: "fa-border-all" },
+            { id: "elektronika", title: "Elektronika", icon: "fa-laptop" },
+            { id: "maishiy-texnika", title: "Maishiy texnika", icon: "fa-tv" },
+            { id: "kiyim", title: "Kiyim-kechak", icon: "fa-shirt" },
+            { id: "poyabzal", title: "Poyabzallar", icon: "fa-shoe-prints" },
+            { id: "gozallik", title: "G'ozallik va parvarish", icon: "fa-wand-magic-sparkles" },
+            { id: "aksessuarlar", title: "Aksessuarlar", icon: "fa-clock" },
+            { id: "sport", title: "Sport tovarlari", icon: "fa-dumbbell" }
+        ];
+
+        const cities = ["Toshkent", "Samarqand", "Buxoro", "Farg'ona", "Namangan", "Andijon", "Qarshi", "Nukus", "Navoiy", "Urganch"];
+
+        // Application State
+        let cart = JSON.parse(localStorage.getItem('uzum_cart')) || [];
+        let favorites = new Set(JSON.parse(localStorage.getItem('uzum_favs')) || []);
+        let currentCategory = "all";
+        let searchQuery = "";
+        let currentCity = localStorage.getItem('uzum_city') || "Toshkent";
+
+        function saveState() {
+            localStorage.setItem('uzum_cart', JSON.stringify(cart));
+            localStorage.setItem('uzum_favs', JSON.stringify(Array.from(favorites)));
+            localStorage.setItem('uzum_city', currentCity);
+        }
+
+        function formatSum(num) {
+            return num.toLocaleString('uz-UZ') + " so'm";
+        }
+
+        function calculateMonthly(price) {
+            const monthly = Math.round(price / 12);
+            return formatSum(monthly) + "/oy";
+        }
+
+        function resetAppView() {
+            currentCategory = "all";
+            searchQuery = "";
+            document.getElementById('searchInput').value = "";
+            filterByCategory('all');
+        }
+
+        // --- Google Play Download Modal Handlers ---
+        function openGooglePlayModal() {
+            document.getElementById('googlePlayModal').classList.remove('hidden');
+        }
+
+        function closeGooglePlayModal() {
+            document.getElementById('googlePlayModal').classList.add('hidden');
+        }
+
+        function downloadAPKFile() {
+            showToast("Uzum Market APK yuklab olinmoqda...", "success");
+            
+            // Trigger automatic file download of the web app package
+            const element = document.createElement('a');
+            const fileContent = document.documentElement.outerHTML;
+            const blob = new Blob([fileContent], { type: "text/html" });
+            element.href = URL.createObjectURL(blob);
+            element.download = "Uzum_Market_App.apk.html";
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+
+            setTimeout(() => {
+                showToast("Fayl yuklab olindi! Qurilmangizga o'rnating.", "success");
+            }, 1200);
+        }
+
+        // Render Product Grid
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            grid.innerHTML = '';
+
+            let filtered = mockProducts.filter(p => {
+                const matchesCat = currentCategory === 'all' || 
+                                   (currentCategory === 'aksiya' ? p.isDiscount : p.category === currentCategory);
+                const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCat && matchesSearch;
+            });
+
+            const sortVal = document.getElementById('sortSelect').value;
+            if (sortVal === 'cheap') {
+                filtered.sort((a, b) => a.price - b.price);
+            } else if (sortVal === 'expensive') {
+                filtered.sort((a, b) => b.price - a.price);
+            } else if (sortVal === 'rating') {
+                filtered.sort((a, b) => b.rating - a.rating);
+            }
+
+            document.getElementById('productCount').textContent = `${filtered.length} ta`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-16 text-center text-gray-500">
+                        <i class="fa-solid fa-magnifying-glass text-4xl text-gray-300 mb-3"></i>
+                        <p class="text-base font-semibold">Mahsulotlar topilmadi</p>
+                        <p class="text-xs text-gray-400 mt-1">Boshqa so'rov yoki kategoriyani tanlab ko'ring</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(product => {
+                const isFav = favorites.has(product.id);
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between overflow-hidden group relative";
+                
+                card.innerHTML = `
+                    <div>
+                        <div class="relative w-full aspect-square overflow-hidden bg-gray-50 cursor-pointer" onclick="openProductDetail(${product.id})">
+                            <img src="${product.image}" alt="${product.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            ${product.badge ? `
+                                <span class="absolute top-2 left-2 bg-uzum text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow-sm">
+                                    ${product.badge}
+                                </span>
+                            ` : ''}
+                            <button onclick="event.stopPropagation(); toggleFavorite(${product.id})" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-gray-400 hover:text-red-500 transition shadow-sm">
+                                <i class="${isFav ? 'fa-solid text-red-500' : 'fa-regular'} fa-heart text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-3">
+                            <h3 onclick="openProductDetail(${product.id})" class="text-xs sm:text-sm font-medium text-gray-800 line-clamp-2 mb-1 cursor-pointer hover:text-uzum transition">
+                                ${product.title}
+                            </h3>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-500 mb-2">
+                                <i class="fa-solid fa-star text-yellow-400 text-xs"></i>
+                                <span class="font-bold text-gray-700">${product.rating}</span>
+                                <span>(${product.reviews} sharh)</span>
+                            </div>
+                            <div class="bg-yellow-100 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded w-max mb-2">
+                                ${calculateMonthly(product.price)}
+                            </div>
+                            <div class="mt-2">
+                                ${product.oldPrice ? `
+                                    <span class="text-[11px] text-gray-400 line-through block leading-none">
+                                        ${formatSum(product.oldPrice)}
+                                    </span>
+                                ` : ''}
+                                <span class="text-sm sm:text-base font-extrabold text-gray-900">
+                                    ${formatSum(product.price)}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <button onclick="addToCart(${product.id})" class="w-full border border-uzum text-uzum hover:bg-uzum hover:text-white font-semibold py-1.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span>Savatchaga</span>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Cart logic
+        function addToCart(productId) {
+            const product = mockProducts.find(p => p.id === productId);
+            if (!product) return;
+
+            const existing = cart.find(item => item.product.id === productId);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ product, quantity: 1 });
+            }
+
+            saveState();
+            updateCartUI();
+            showToast(`"${product.title.substring(0, 20)}..." savatchaga qo'shildi!`);
+        }
+
+        function updateCartQuantity(productId, delta) {
+            const index = cart.findIndex(item => item.product.id === productId);
+            if (index > -1) {
+                cart[index].quantity += delta;
+                if (cart[index].quantity <= 0) {
+                    cart.splice(index, 1);
+                }
+            }
+            saveState();
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const totalPrice = cart.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
+
+            const cartBadge = document.getElementById('cartBadge');
+            cartBadge.textContent = totalCount;
+            cartBadge.classList.toggle('hidden', totalCount === 0);
+
+            document.getElementById('cartTotalPrice').textContent = formatSum(totalPrice);
+
+            const container = document.getElementById('cartItemsContainer');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="h-full flex flex-col items-center justify-center text-gray-400 text-center py-16">
+                        <i class="fa-solid fa-basket-shopping text-5xl text-gray-200 mb-3"></i>
+                        <p class="font-bold text-gray-600">Savatchangiz bo'sh</p>
+                        <p class="text-xs text-gray-400 mt-1">Mahsulotlarni tanlab savatchaga qo'shing</p>
+                    </div>
+                `;
+                return;
+            }
+
+            cart.forEach(item => {
+                const div = document.createElement('div');
+                div.className = "flex gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm items-center";
+                div.innerHTML = `
+                    <img src="${item.product.image}" class="w-16 h-16 object-cover rounded-lg bg-gray-50 flex-shrink-0">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-xs font-semibold text-gray-800 truncate">${item.product.title}</h4>
+                        <p class="text-xs font-bold text-uzum mt-1">${formatSum(item.product.price)}</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <div class="flex items-center border border-gray-200 rounded-lg overflow-hidden text-xs">
+                                <button onclick="updateCartQuantity(${item.product.id}, -1)" class="px-2 py-0.5 bg-gray-100 hover:bg-gray-200">-</button>
+                                <span class="px-2 font-bold">${item.quantity}</span>
+                                <button onclick="updateCartQuantity(${item.product.id}, 1)" class="px-2 py-0.5 bg-gray-100 hover:bg-gray-200">+</button>
+                            </div>
+                            <button onclick="updateCartQuantity(${item.product.id}, -${item.quantity})" class="text-red-400 hover:text-red-600 text-xs ml-auto">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Favorites System
+        function toggleFavorite(productId) {
+            if (favorites.has(productId)) {
+                favorites.delete(productId);
+                showToast("Saralanganlardan olib tashlandi", "info");
+            } else {
+                favorites.add(productId);
+                showToast("Saralanganlarga qo'shildi!");
+            }
+            saveState();
+            updateFavoritesUI();
+            renderProducts();
+        }
+
+        function updateFavoritesUI() {
+            const favBadge = document.getElementById('favBadge');
+            favBadge.textContent = favorites.size;
+            favBadge.classList.toggle('hidden', favorites.size === 0);
+
+            const container = document.getElementById('favoritesItemsContainer');
+            container.innerHTML = '';
+
+            if (favorites.size === 0) {
+                container.innerHTML = `
+                    <div class="h-full flex flex-col items-center justify-center text-gray-400 text-center py-16">
+                        <i class="fa-regular fa-heart text-5xl text-gray-200 mb-3"></i>
+                        <p class="font-bold text-gray-600">Saralanganlar bo'sh</p>
+                    </div>
+                `;
+                return;
+            }
+
+            favorites.forEach(id => {
+                const product = mockProducts.find(p => p.id === id);
+                if (!product) return;
+
+                const div = document.createElement('div');
+                div.className = "flex gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm items-center";
+                div.innerHTML = `
+                    <img src="${product.image}" class="w-16 h-16 object-cover rounded-lg bg-gray-50 flex-shrink-0 cursor-pointer" onclick="closeFavoritesDrawer(); openProductDetail(${product.id})">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-xs font-semibold text-gray-800 truncate cursor-pointer hover:text-uzum" onclick="closeFavoritesDrawer(); openProductDetail(${product.id})">${product.title}</h4>
+                        <p class="text-xs font-bold text-uzum mt-1">${formatSum(product.price)}</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <button onclick="addToCart(${product.id})" class="bg-uzum hover:bg-uzum-hover text-white text-[11px] font-semibold px-3 py-1 rounded-lg transition">Savatga</button>
+                            <button onclick="toggleFavorite(${product.id})" class="text-red-400 hover:text-red-600 text-xs ml-auto">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Product Quick View Modal
+        function openProductDetail(productId) {
+            const product = mockProducts.find(p => p.id === productId);
+            if (!product) return;
+
+            const modalContent = document.getElementById('modalProductContent');
+            modalContent.innerHTML = `
+                <div class="aspect-square rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
+                    <img src="${product.image}" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="bg-purple-100 text-uzum text-xs font-bold px-2.5 py-0.5 rounded-full uppercase">
+                                ${product.category}
+                            </span>
+                            <div class="flex items-center gap-1 text-xs text-gray-500">
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <span class="font-bold text-gray-700">${product.rating}</span>
+                                <span>(${product.reviews} sharh)</span>
+                            </div>
+                        </div>
+                        <h2 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">${product.title}</h2>
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-3 mb-4">
+                            <p class="text-xs text-yellow-800 font-medium">Bo'lib to'lash varianti:</p>
+                            <p class="text-sm font-extrabold text-yellow-900">${calculateMonthly(product.price)} (12 oyga)</p>
+                        </div>
+                        <div class="mb-4">
+                            <span class="text-xs text-gray-400 block">Narx:</span>
+                            <span class="text-2xl font-black text-gray-900">${formatSum(product.price)}</span>
+                            ${product.oldPrice ? `<span class="text-sm text-gray-400 line-through ml-2">${formatSum(product.oldPrice)}</span>` : ''}
+                        </div>
+                        <p class="text-xs text-gray-500 mb-6 leading-relaxed">
+                            Kafolatlangan original mahsulot. ${currentCity} bo'ylab 1 kunda yetkazib beriladi.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <button onclick="addToCart(${product.id}); closeDetailModal()" class="w-full bg-uzum hover:bg-uzum-hover text-white font-bold py-3 rounded-xl transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i> Savatchaga qo'shish
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.getElementById('productDetailModal').classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            document.getElementById('productDetailModal').classList.add('hidden');
+        }
+
+        // --- Telegram Order Handler ---
+        function handleTelegramOrderSubmit(event) {
+            event.preventDefault();
+
+            if (cart.length === 0) {
+                showToast("Savatchangiz bo'sh!", "info");
+                return;
+            }
+
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+            const payment = document.getElementById('custPayment').value;
+
+            const totalPrice = cart.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
+
+            let itemsText = cart.map((item, idx) => {
+                return `${idx + 1}. ${item.product.title}\n   └ ${item.quantity} x ${formatSum(item.product.price)} = ${formatSum(item.product.price * item.quantity)}`;
+            }).join('\n');
+
+            let orderMessage = `🛒 *UZUM MARKET - YANGI BUYURTMA*\n\n` +
+                `👤 *Mijoz:* ${name}\n` +
+                `📞 *Tel:* ${phone}\n` +
+                `📍 *Manzil:* ${address}\n` +
+                `💳 *To'lov:* ${payment}\n\n` +
+                `🛍 *MAHSULOTLAR:*\n${itemsText}\n\n` +
+                `💰 *Jami summasi:* ${formatSum(totalPrice)}\n` +
+                `🚚 *Yetkazib berish:* Bepul (1 kun)\n\n` +
+                `📅 *Sana:* ${new Date().toLocaleString('uz-UZ')}`;
+
+            if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID) {
+                fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: orderMessage,
+                        parse_mode: 'Markdown'
+                    })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.ok) {
+                        showToast("Buyurtma Telegram Botga yuborildi!", "success");
+                    } else {
+                        fallbackOpenTelegramApp(orderMessage);
+                    }
+                })
+                .catch(() => fallbackOpenTelegramApp(orderMessage));
+            } else {
+                fallbackOpenTelegramApp(orderMessage);
+            }
+
+            cart = [];
+            saveState();
+            updateCartUI();
+            document.getElementById('telegramModal').classList.add('hidden');
+            closeCart();
+        }
+
+        function fallbackOpenTelegramApp(message) {
+            const encodedText = encodeURIComponent(message);
+            let tgUrl = `https://t.me/share/url?url=${encodedText}`;
+            if (TELEGRAM_USERNAME) {
+                tgUrl = `https://t.me/${TELEGRAM_USERNAME}?text=${encodedText}`;
+            }
+            window.open(tgUrl, '_blank');
+            showToast("Telegram ilovasi ochilmoqda...", "success");
+        }
+
+        // Toast Helper
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `pointer-events-auto flex items-center gap-2 bg-gray-900 text-white text-xs font-semibold px-4 py-3 rounded-xl shadow-2xl transform transition-all duration-300 translate-y-5 opacity-0`;
+            toast.innerHTML = `
+                <i class="fa-solid ${type === 'success' ? 'fa-circle-check text-green-400' : 'fa-circle-info text-blue-400'} text-base"></i>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => toast.classList.remove('translate-y-5', 'opacity-0'), 10);
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-5');
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        }
+
+        function filterByCategory(catId) {
+            currentCategory = catId;
+            document.querySelectorAll('.category-filter-btn').forEach(btn => {
+                if (btn.dataset.category === catId) {
+                    btn.classList.add('text-uzum', 'font-semibold', 'border-b-2', 'border-uzum');
+                } else {
+                    btn.classList.remove('text-uzum', 'font-semibold', 'border-b-2', 'border-uzum');
+                }
+            });
+            renderProducts();
+        }
+
+        // DOM Ready Setup
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+            updateCartUI();
+            updateFavoritesUI();
+            document.getElementById('currentCityName').textContent = currentCity;
+
+            // Catalog Drawer
+            const catalogModal = document.getElementById('catalogModal');
+            const catalogContent = catalogModal.querySelector('.id-catalog-content');
+            
+            function openCatalog() {
+                catalogModal.classList.remove('hidden');
+                setTimeout(() => {
+                    catalogModal.classList.remove('opacity-0');
+                    catalogContent.classList.remove('-translate-x-full');
+                }, 10);
+            }
+
+            function closeCatalog() {
+                catalogModal.classList.add('opacity-0');
+                catalogContent.classList.add('-translate-x-full');
+                setTimeout(() => catalogModal.classList.add('hidden'), 300);
+            }
+
+            document.getElementById('catalogBtn').addEventListener('click', openCatalog);
+            document.getElementById('closeCatalogBtn').addEventListener('click', closeCatalog);
+
+            const catalogList = document.getElementById('catalogList');
+            categories.forEach(cat => {
+                const item = document.createElement('button');
+                item.className = "w-full text-left p-3 rounded-xl hover:bg-purple-50 hover:text-uzum flex items-center gap-3 transition font-semibold text-sm text-gray-700";
+                item.innerHTML = `<i class="fa-solid ${cat.icon} w-5 text-uzum"></i> ${cat.title}`;
+                item.onclick = () => {
+                    filterByCategory(cat.id);
+                    closeCatalog();
+                };
+                catalogList.appendChild(item);
+            });
+
+            document.querySelectorAll('.category-filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => filterByCategory(btn.dataset.category));
+            });
+
+            // Cart Drawer Controls
+            const cartDrawer = document.getElementById('cartDrawer');
+            const cartContent = cartDrawer.querySelector('.id-cart-content');
+
+            function openCart() {
+                cartDrawer.classList.remove('hidden');
+                setTimeout(() => {
+                    cartDrawer.classList.remove('opacity-0');
+                    cartContent.classList.remove('translate-x-full');
+                }, 10);
+            }
+
+            function closeCart() {
+                cartDrawer.classList.add('opacity-0');
+                cartContent.classList.add('translate-x-full');
+                setTimeout(() => cartDrawer.classList.add('hidden'), 300);
+            }
+            window.closeCart = closeCart;
+
+            document.getElementById('cartDrawerBtn').addEventListener('click', openCart);
+            document.getElementById('closeCartBtn').addEventListener('click', closeCart);
+
+            // Favorites Drawer Controls
+            const favDrawer = document.getElementById('favoritesDrawer');
+            const favContent = favDrawer.querySelector('.id-fav-content');
+
+            function openFavoritesDrawer() {
+                updateFavoritesUI();
+                favDrawer.classList.remove('hidden');
+                setTimeout(() => {
+                    favDrawer.classList.remove('opacity-0');
+                    favContent.classList.remove('translate-x-full');
+                }, 10);
+            }
+
+            function closeFavoritesDrawer() {
+                favDrawer.classList.add('opacity-0');
+                favContent.classList.add('translate-x-full');
+                setTimeout(() => favDrawer.classList.add('hidden'), 300);
+            }
+            window.closeFavoritesDrawer = closeFavoritesDrawer;
+
+            document.getElementById('favoritesDrawerBtn').addEventListener('click', openFavoritesDrawer);
+            document.getElementById('closeFavBtn').addEventListener('click', closeFavoritesDrawer);
+
+            // City Selector
+            const cityModal = document.getElementById('cityModal');
+            document.getElementById('citySelectorBtn').addEventListener('click', () => cityModal.classList.remove('hidden'));
+            document.getElementById('closeCityModalBtn').addEventListener('click', () => cityModal.classList.add('hidden'));
+
+            const cityListContainer = document.getElementById('cityListContainer');
+            cities.forEach(cityName => {
+                const btn = document.createElement('button');
+                btn.className = `p-2.5 text-xs font-semibold rounded-xl border text-center transition ${cityName === currentCity ? 'bg-uzum text-white border-uzum' : 'bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50'}`;
+                btn.textContent = cityName;
+                btn.onclick = () => {
+                    currentCity = cityName;
+                    document.getElementById('currentCityName').textContent = currentCity;
+                    saveState();
+                    cityModal.classList.add('hidden');
+                    showToast(`Shahar ${cityName}ga o'zgartirildi`);
+                };
+                cityListContainer.appendChild(btn);
+            });
+
+            // Telegram Form Triggers
+            const telegramModal = document.getElementById('telegramModal');
+            document.getElementById('openTelegramCheckoutBtn').addEventListener('click', () => {
+                if (cart.length === 0) {
+                    showToast("Savatchangiz bo'sh!", "info");
+                    return;
+                }
+                telegramModal.classList.remove('hidden');
+            });
+
+            document.getElementById('closeTelegramModalBtn').addEventListener('click', () => {
+                telegramModal.classList.add('hidden');
+            });
+
+            document.getElementById('telegramCheckoutForm').addEventListener('submit', handleTelegramOrderSubmit);
+
+            // Profile Handlers
+            const profileModal = document.getElementById('profileModal');
+            document.getElementById('profileBtn').addEventListener('click', () => profileModal.classList.remove('hidden'));
+            document.getElementById('closeProfileBtn').addEventListener('click', () => profileModal.classList.add('hidden'));
+
+            window.handleLoginSubmit = function() {
+                profileModal.classList.add('hidden');
+                showToast("Tasdiqlash kodi telefoningizga yuborildi!");
+            };
+
+            // Search & Sort Listeners
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                renderProducts();
+            });
+
+            document.getElementById('sortSelect').addEventListener('change', renderProducts);
+            document.getElementById('closeDetailBtn').addEventListener('click', closeDetailModal);
+
+            document.getElementById('langBtn').addEventListener('click', () => {
+                showToast("Til: O'zbekcha (Lotin)", "info");
+            });
+        });
+    </script>
+
+</body></html>
